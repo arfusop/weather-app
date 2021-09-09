@@ -1,10 +1,15 @@
 import React from 'react'
-import Home from './index'
-import 'antd/dist/antd.css' // or 'antd/dist/antd.less'
+import WeatherContextWrapper from '../context'
+import 'antd/dist/antd.css'
+
 import '../styles/globals.scss'
 
-const App = () => {
-    return <Home />
+const App = ({ Component }) => {
+    return (
+        <WeatherContextWrapper>
+            <Component />
+        </WeatherContextWrapper>
+    )
 }
 
 export default App

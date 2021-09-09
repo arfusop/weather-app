@@ -16,3 +16,11 @@ a {
 * {
     box-sizing: border-box;
 }
+
+.WeatherHome {
+    height: 100vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+}

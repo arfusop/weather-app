@@ -1,10 +1,12 @@
 import React from 'react'
+import Nav from '../components/layout/Nav'
+import Content from '../components/layout/Content'
 
 const Home = () => {
     return (
-        <div>
-            we in here
-            <button>weatheroni</button>
+        <div className="WeatherHome">
+            <Nav />
+            <Content />
         </div>
     )
 }
