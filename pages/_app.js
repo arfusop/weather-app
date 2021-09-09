@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import React from 'react'
+import Home from './index'
+import 'antd/dist/antd.css' // or 'antd/dist/antd.less'
+import '../styles/globals.scss'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = () => {
+    return <Home />
 }
 
-export default MyApp
+export default App
